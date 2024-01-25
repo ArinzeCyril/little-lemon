@@ -38,7 +38,7 @@
 }
 
 header,
-main,
+.hero-section,
 footer {
   padding: 0 15%;
 }
@@ -61,6 +61,62 @@ header{
   text-transform: capitalize;
 }
 
+.hero-section{
+  display: flex;
+  background-color: #495E57;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.hero-section h1{
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 4rem;
+  color: #F4CE14;
+  margin: 0;
+}
+
+.hero-section h2{
+  font-size: 40px;
+  text-transform: capitalize;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.hero-section p{
+  width: 25rem;
+}
+
+.hero-section button{
+  width: 15rem;
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 16px;
+  border: none;
+  color: #fff;
+  background-color: #F4CE14;
+}
+
+.hero-section img{
+  width: 20rem;
+  border-radius: 16px;
+  position: relative;
+  top: 2rem;
+}
+
+.hero-img {
+  height: 25em;
+}
 
 
 
