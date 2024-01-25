@@ -45,7 +45,7 @@ footer {
 
 header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .main-nav > ul {
@@ -86,6 +86,11 @@ footer img{
   fill: #fff;
 }
 
+footer h2,
+footer li{
+  text-transform: capitalize;
+}
+
 footer ul{
   list-style: none;
   padding: 0;
@@ -96,6 +101,8 @@ footer li{
 }
 
 footer a{
+  display: block;
   color: #fff;
   text-decoration: none;
+  padding: .3rem 0;
 }
