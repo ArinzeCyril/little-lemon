@@ -1,0 +1,66 @@
+/* used in DailySpecials components */
+.daily-specials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 8rem 0;
+}
+
+.daily-specials div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daily-specials div:first-of-type h2{
+    font-size: 32px;
+}
+
+.daily-specials div:first-of-type button{
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #F4CE14;
+    border-radius: 16px;
+}
+
+
+.special-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+    background-color: #EDEFEE;
+    padding-bottom: .5rem;
+}
+
+.special-card div{
+    margin: 0 1.5em;
+}
+
+.special-card div:first-of-type{
+    margin: 0;
+}
+
+.special-card img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.special-card-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-price{
+    color: #F4CE14;
+}
+
+.special-card div:last-of-type a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
