@@ -1,0 +1,37 @@
+.testimonials{
+    background-color: #495E57;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.testimonials div:first-of-type h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.testimonials-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-sizing: border-box;
+    width: 20%;
+    background-color: #EDEFEE;
+    padding: 1.5em;
+    color: #000;
+}
+
+.testimonials-card > .rating{
+    font-size: 18px;
+}
+
+.testimonials-card .img-details{
+    display: flex;
+    gap: .6rem;
+}
+
+.testimonials-card .img-details img{
+    width: 35%;
+    aspect-ratio: .7;
+    border-radius: 16px;
+}
