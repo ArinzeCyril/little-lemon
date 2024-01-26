@@ -37,10 +37,17 @@
   }
 }
 
+h1,
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header,
 .hero-section,
 .daily-specials,
 .testimonials,
+.abouts,
 footer {
   padding: 0 15%;
 }
@@ -120,8 +127,57 @@ header{
   height: 25em;
 }
 
+.abouts {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  border: 2px solid red;
+  gap: 2rem;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 15rem;
+  font-size: 18px;
+}
 
+.abouts > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 30rem;
+}
 
+.abouts h2{
+  font-size: 40px;
+  margin: 35px 0 0 0;
+}
+
+.abouts h3{
+  font-size: 32px;
+  margin: 0;
+}
+
+.abouts p{
+  text-align: justify;
+}
+
+.about-img img{
+  display: block;
+  width: 20rem;
+  aspect-ratio: .8;
+  border-radius: 20px;
+}
+
+.about-img img:first-of-type{
+  position: absolute;
+  right: 15%;
+  top: 10rem;
+}
+
+.about-img img:nth-of-type(2){
+  position: absolute;
+  right: 28%;
+  top: 16rem;
+}
 
 
 
