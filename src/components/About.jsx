@@ -9,7 +9,8 @@ const About = () => {
                 <h2>Little Lemon</h2>
                 <h3>Nigeria</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis error iste
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis error iste
                 fugiat, laborum dicta nostrum ullam totam quae illum, doloribus iusto beatae
                 natus autem accusantium, sapiente earum in perspiciatis? Corporis.
                 Exercitationem, tenetur quis id eius ut perferendis veniam expedita, architecto,
