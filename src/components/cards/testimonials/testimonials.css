@@ -6,8 +6,10 @@
 }
 
 .testimonials div:first-of-type h2{
-    font-size: 40px;
+    font-size: 48px;
     text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
 }
 
 .testimonials-card {

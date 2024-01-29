@@ -40,7 +40,7 @@
 h1,
 h2,
 h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Markazi Text', serif;
 }
 
 header,
@@ -50,6 +50,12 @@ header,
 .abouts,
 footer {
   padding: 0 15%;
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
 }
 
 header{
@@ -64,6 +70,7 @@ header{
 }
 
 .main-nav a {
+  font-size: 20px;
   text-decoration: none;
   color: #000;
   font-weight: 700;
@@ -81,7 +88,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 4rem 0;
   gap: 1rem;
   font-size: 18px;
 }
@@ -103,24 +110,26 @@ header{
 }
 
 .hero-section p{
-  width: 25rem;
+  width: 453px;
+  line-height: 35px;
 }
 
 .hero-section button{
-  width: 15rem;
+  width: 218px;
   padding: 1rem;
   font-size: 18px;
   border-radius: 16px;
   border: none;
-  color: #fff;
+  color: #000;
   background-color: #F4CE14;
 }
 
 .hero-section img{
-  width: 20rem;
-  border-radius: 16px;
+  width: 410px;
+  border-radius: 30px;
   position: relative;
-  top: 2rem;
+  top: 4rem;
+  aspect-ratio: .8;
 }
 
 .hero-img {
@@ -130,10 +139,7 @@ header{
 .abouts {
   box-sizing: border-box;
   display: flex;
-  width: 100%;
-  border: 2px solid red;
-  gap: 2rem;
-  position: relative;
+  justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 15rem;
   font-size: 18px;
@@ -143,11 +149,11 @@ header{
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .abouts h2{
-  font-size: 40px;
+  font-size: 48px;
   margin: 35px 0 0 0;
 }
 
@@ -160,23 +166,27 @@ header{
   text-align: justify;
 }
 
+.about-img{
+  display: flex;
+}
+
 .about-img img{
-  display: block;
-  width: 20rem;
+  width: 257px;
+  height: 354px;
   aspect-ratio: .8;
   border-radius: 20px;
 }
 
 .about-img img:first-of-type{
-  position: absolute;
-  right: 15%;
-  top: 10rem;
+  position: relative;
+  left: 6rem;
+  top: 13rem;
+  z-index: 100;
 }
 
 .about-img img:nth-of-type(2){
-  position: absolute;
-  right: 28%;
-  top: 16rem;
+  position: relative;
+  top: 6rem;
 }
 
 
@@ -196,13 +206,14 @@ footer div:first-of-type{
 
 footer img{
   background-color: #fff;
-  padding: .2rem .7rem;
-  fill: #fff;
+  height: 107px;
+  aspect-ratio: 2;
 }
 
 footer h2,
 footer li{
   text-transform: capitalize;
+  font-family: 'Karla', sans-serif;
 }
 
 footer ul{

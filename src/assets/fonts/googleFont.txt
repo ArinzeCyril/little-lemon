@@ -1,0 +1,16 @@
+karla {regular(400) and bold(700)}
+markazi text {bold(700)}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@700&display=swap');
+</style>
+
+font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif;
+
+1. shaddow
+2. links
