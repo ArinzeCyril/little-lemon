@@ -1,4 +1,5 @@
 import heroImg from '../assets/images/restauranfood.jpg';
+import Button from './ReserveTableBTN';
 
 import React from 'react'
 
@@ -14,7 +15,7 @@ const HeroSection = () => {
                 <p>we are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                 <p>We are looking forward to serving you</p>
             </div>
-            <button>reserve a table</button>
+            <Button text="reserve a table" />
         </div>
         <div className='hero-img'>
             <img src={heroImg}/>
