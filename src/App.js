@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Login from './components/Login';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       {/* <Header /> */}
       {/* <Main /> */}
       {/* <Footer /> */}
-      <Login />
+      <SignUp />
     </>
   );
 }
