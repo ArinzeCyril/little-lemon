@@ -1,5 +1,5 @@
 import Header from './Header'
-import Input from './SignUpInput';
+import Input from './InputField';
 import userICN from '../assets/icons/user-regular.svg';
 import passwordICN from '../assets/icons/icon _eye_.svg';
 
@@ -25,7 +25,6 @@ const SignUp = () => {
                 <button>Sign Up</button>
             </form>
         </div>
-        
     </section>
   )
 }

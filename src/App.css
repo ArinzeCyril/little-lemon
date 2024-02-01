@@ -356,6 +356,98 @@ header{
 }
 
 
+/* ##### Reservation section ###### */
+.reservation {
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #495E57;
+  color: #fff;
+  min-height: 93vh;
+}
+
+.reservation h1{
+  font-size: 50px;
+  color: #F4CE14;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1.5rem; */
+}
+
+.reservation input{
+  padding: 1rem;
+  width: 40vw;
+  max-width: 50rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  text-indent: 1.5rem;
+}
+
+.guest-no,
+.reservation label{
+  align-self: flex-start;
+  text-indent: 1rem;
+  margin-bottom: .5rem;
+}
+
+.guest-no{
+  margin-bottom: 2rem;
+}
+
+.guest-no p{
+  margin: 2rem 0;
+}
+
+#minusBtn,
+#addBtn {
+  padding: .5rem;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.guest-no span{
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.terms {
+  align-self: flex-start;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.terms>label{
+  display: none;
+}
+
+#radioBtn{
+  width: 2rem;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.reservation button{
+  background-color: #F4CE14;
+  font-weight: 700;
+  padding: 1.5rem;
+  width: 35vw;
+  max-width: 45rem;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+}
+
+
 /* ##### Footer section ###### */
 footer {
   display: flex;

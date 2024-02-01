@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import SignUp from './components/SignUp';
+import Reservation from './components/Reservation';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       {/* <Header /> */}
       {/* <Main /> */}
       {/* <Footer /> */}
-      <SignUp />
+      <Reservation />
     </>
   );
 }
