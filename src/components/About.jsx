@@ -3,7 +3,7 @@ import pix2 from '../assets/images/Mario and Adrian b.jpg';
 
 const About = () => {
   return (
-    <section className='abouts'>
+    <section id='about' className='abouts'>
         <div>
             <div>
                 <h2>Little Lemon</h2>

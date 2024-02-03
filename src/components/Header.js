@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom'
 import Nav from './Nav';
 import logo from '../assets/images/Logo .svg';
 
 const Header = () => {
   return (
     <header>
-      <img src={logo} />
+      <Link to={'/'}>
+        <img src={logo} />
+      </Link>
       <Nav />
     </header>
   )

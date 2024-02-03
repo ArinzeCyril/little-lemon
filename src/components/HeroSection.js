@@ -5,7 +5,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className='hero-section'>
+    <section id='home' className='hero-section'>
         <div className='hero-left'>
             <div>
                 <h1>little lemon</h1>

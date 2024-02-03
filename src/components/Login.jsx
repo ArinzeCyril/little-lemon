@@ -1,11 +1,11 @@
-import Header from './Header';
+// import Header from './Header';
 import userICN from '../assets/icons/user-regular.svg';
 import eyeICN from '../assets/icons/icon _eye_.svg';
 
-const login = () => {
+const login = ( { setSignup } ) => {
+    
   return (
     <section className='login-page'>
-        <Header />
         <div className='login'>
             <div>
                 <h1>One of Us?</h1>

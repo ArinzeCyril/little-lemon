@@ -4,7 +4,7 @@ import Button from './ReserveTableBTN';
 
 const DailySpecials = () => {
   return (
-    <section className='daily-specials'>
+    <section id='menu' className='daily-specials'>
       <div>
         <h2>Specials</h2>
         <Button text="Order Online" />

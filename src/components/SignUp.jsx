@@ -1,4 +1,4 @@
-import Header from './Header'
+// import Header from './Header'
 import Input from './InputField';
 import userICN from '../assets/icons/user-regular.svg';
 import passwordICN from '../assets/icons/icon _eye_.svg';
@@ -6,7 +6,7 @@ import passwordICN from '../assets/icons/icon _eye_.svg';
 const SignUp = () => {
   return (
     <section>
-        <Header />
+        {/* <Header /> */}
         <div className="signup">
             <h1>Sign Up</h1>
             <form action="">
