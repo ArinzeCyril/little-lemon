@@ -3,8 +3,8 @@ import egbusi from '../assets/images/foods/Egbusi.jpg';
 import jollof from '../assets/images/foods/jollof.jpg';
 
 import bruchetta from '../assets/images/foods/bruchetta.svg';
-import greekSalad from '../assets/images/foods/greek salad.jpg';
-import lemonDessert from '../assets/images/foods/lemon dessert.jpg';
+import greekSalad from '../assets/images/foods/greek-salad.jpg';
+import lemonDessert from '../assets/images/foods/lemon-dessert.jpg';
 import pastries from '../assets/images/restauranfood.jpg';
 
 const specials = [
