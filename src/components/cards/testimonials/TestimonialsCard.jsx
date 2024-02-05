@@ -1,17 +1,15 @@
 import pix from '../../../assets/images/foods/bruchetta.svg';
 
-const TestimonialsCard = () => {
+const TestimonialsCard = (props) => {
   return (
     <div className='testimonials-card'>
         <div className='rating'><p>Rating</p></div>
         <div className='img-details'>
-            <img src={pix} alt={`${pix} image`} />
-            <p>Bruchetta</p>
+            <img src={props.pix} alt={`review image for ${props.name}`} />
+            <p>{props.name}</p>
         </div>
         <div className='description'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-                laboriosam nihil excepturi molestias autem accusantium maxime tempore
-            </p>
+            <p>{props.desc}</p>
         </div>
     </div>
   )

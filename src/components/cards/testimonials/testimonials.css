@@ -17,9 +17,9 @@
     flex-direction: column;
     gap: .5rem;
     box-sizing: border-box;
-    width: 20%;
+    width: 23.8%;
     background-color: #EDEFEE;
-    padding: 1.5em;
+    padding: 1em;
     color: #000;
 }
 
@@ -29,7 +29,7 @@
 
 .testimonials-card .img-details{
     display: flex;
-    gap: .6rem;
+    gap: .5rem;
 }
 
 .testimonials-card .img-details img{
