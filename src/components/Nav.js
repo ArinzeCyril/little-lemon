@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { HashLink as HLink } from 'react-router-hash-link';
 
 const Nav = props => {
-  const handleNavAuth = () => {
+  // const handleNavAuth = () => {
 
-  }
+  // }
   const signupState = () => {
     // props.setSignup(!props.signup)
   }

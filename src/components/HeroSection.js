@@ -18,7 +18,7 @@ const HeroSection = () => {
             <Button text="Reserve a Table" />
         </div>
         <div className='hero-img'>
-            <img src={heroImg}/>
+            <img src={heroImg} alt=''/>
         </div>
     </section>
   )

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <img src={logo} />
+        <img src={logo} alt='logo' />
       </div>
       <nav>
         <h2>dorminant navigation</h2>
@@ -21,9 +21,9 @@ const Footer = () => {
       <div>
         <h2>contacts</h2>
         <ul>
-          <li><a href='#'>phone number</a></li>
-          <li><a href='#'>adress</a></li>
-          <li><a href='#'>email</a></li>
+          <li>phone number</li>
+          <li>adress</li>
+          <li>email</li>
         </ul>
       </div>
       <div>
