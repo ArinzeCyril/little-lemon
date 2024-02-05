@@ -68,6 +68,12 @@ button {
   font-weight: 400;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 header{
   box-sizing: border-box;
   display: flex;
