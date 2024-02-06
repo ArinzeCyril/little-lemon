@@ -5,6 +5,7 @@ import {testimonials} from '../data/allData';
 const Testimonials = () => {
   const testinobialSection = testimonials.map(testimoney => {
     return <TestimonialsCard
+      key={testimoney.id}
       pix={testimoney.pix}
       name={testimoney.name}
       desc={testimoney.desc}

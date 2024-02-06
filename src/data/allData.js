@@ -9,18 +9,21 @@ import pastries from '../assets/images/restauranfood.jpg';
 
 const specials = [
     {
+        id: 100,
         pix: abacha,
         name: 'Abacha',
         price: '24.99',
         desc: 'get your special abacha delicacy delivered to you at your location or for a date after a reservation'
     },
     {
+        id: 200,
         pix: egbusi,
         name: 'Egbusi Soup',
         price: '17.99',
         desc: 'Get your special Egbusi soup, packed with lots of fish, meat and kanda... You just can’t resist it'
     },
     {
+        id: 300,
         pix: jollof,
         name: 'Jollof Rice',
         price: '12.99',
@@ -30,21 +33,25 @@ const specials = [
 
 const testimonials = [
     {
+        id: 100,
         pix: bruchetta,
         name: 'Bruchetta',
         desc: 'Review review review review review review review review '
     },
     {
+        id: 200,
         pix: greekSalad,
         name: 'Greek Salad',
         desc: 'Review review review review review review review review '
     },
     {
+        id: 300,
         pix: lemonDessert,
         name: 'Lemon Dessert',
         desc: 'Review review review review review review review review '
     },
     {
+        id: 400,
         pix: pastries,
         name: 'Pastries',
         desc: 'Review review review review review review review review '

@@ -9,7 +9,7 @@ const Nav = props => {
   const signupState = () => {
     // props.setSignup(!props.signup)
   }
-  console.log(props.signup);
+  // console.log(props.signup);
   return (
     <nav className='main-nav'>
       <ul>

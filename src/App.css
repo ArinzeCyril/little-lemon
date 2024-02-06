@@ -457,6 +457,8 @@ header{
 }
 
 .reservation button{
+  font-size: 18px;
+  color: #000;
   background-color: #F4CE14;
   font-weight: 700;
   padding: 1.5rem;
@@ -464,6 +466,11 @@ header{
   max-width: 45rem;
   border-radius: 20px;
   margin-top: 2.5rem;
+}
+
+.reservation button[disabled] {
+  background-color: #f4cf1473;
+  color: #00000055;
 }
 
 /* ##### Confirmation section ###### */

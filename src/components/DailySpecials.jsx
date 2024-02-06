@@ -6,6 +6,7 @@ import {specials} from '../data/allData';
 const DailySpecials = () => {
 const dailySpecials = specials.map(card => {
   return <SpecialCard
+    key={card.id}
     pix={card.pix}
     name={card.name}
     price={card.price}
