@@ -18,7 +18,7 @@ const Reservation = () => {
     setTableNo(tableNo+1)
   }
   const minus = () => {
-    setTableNo(tableNo-1)
+    tableNo > 1 && setTableNo(tableNo-1);
   }
   const handleSubmit = e => {
     e.preventDefault()
