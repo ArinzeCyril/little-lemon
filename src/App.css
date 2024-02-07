@@ -70,6 +70,7 @@ button {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -506,6 +507,44 @@ header{
   border-radius: 1rem;
   background-color: #F4CE14;
   margin-top: 5rem;
+}
+
+/* ##### Order Delivery section ###### */
+.order-delivery {
+  position: absolute;
+  top: 5rem;
+  width: 50%;
+  left: 25%;
+  border-radius: 20px;
+  background-color: #495E57;
+  color: #fff;
+}
+.order-delivery img{
+  width: 100%;
+  aspect-ratio: 1.5;
+  border-radius: 20px 20px 0 0;
+}
+.card-details{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 3rem 3rem;
+}
+.card-details>div:first-of-type{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-details>div:first-of-type p{
+  color: #F4CE14;
+}
+.price-calc{
+  display: flex;
+  justify-content: space-around;
+}
+.card-details>div:last-of-type{
+  align-self: flex-end;
+  margin-right: 3rem;
 }
 
 /* ##### Footer section ###### */

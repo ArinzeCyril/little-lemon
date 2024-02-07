@@ -2,6 +2,7 @@
 .daily-specials{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
     padding-top: 5rem;
@@ -33,6 +34,7 @@
 .special-card{
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
     gap: 1rem;
     width: 30%;
     background-color: #EDEFEE;

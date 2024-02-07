@@ -1,17 +1,30 @@
 import './cards/specials/specials.css'
 import SpecialCard from './cards/specials/SpecialsCard';
+import OrderDelivery from './OrderDelivery';
 import Button from './ReserveTableBTN';
 import {specials} from '../data/allData';
 
 const DailySpecials = () => {
 const dailySpecials = specials.map(card => {
-  return <SpecialCard
-    key={card.id}
-    pix={card.pix}
-    name={card.name}
-    price={card.price}
-    desc={card.desc}
+  return (<>
+    <SpecialCard
+      key={card.id}
+      pix={card.pix}
+      name={card.name}
+      price={card.price}
+      desc={card.desc}
+      onClick={() => {
+        return (
+          <OrderDelivery
+            pix={card.pix}
+            name={card.name}
+            price={card.price}
+            num={card.num}
+          />
+        )
+      }}
   />
+  </> )
 })
   return (
     <section id='menu' className='daily-specials'>

@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 import Reservation from './components/Reservation';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import OnlineDelivery from './components/OrderDelivery';
 import Confirmation from './components/Confirmation';
 import { useState } from 'react';
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/login' element={<Login setSignup={setSignup} />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/reservation' element={login ? <Reservation setCart={setCart} /> : <Navigate to='/signup' />} />
+        <Route path='/delivery' element={login ? <OnlineDelivery /> : <Navigate to='/signup' />} />
         <Route path='/confirmation' element={<Confirmation setCart={setCart} />} />
       </Routes>
     </Router>

@@ -8,7 +8,7 @@ const SpecialsCard = (props) => {
       </div>
       <div>{props.desc}</div>
       <div>
-          <p><a href="#">Order a Delivery</a></p>
+          <p onClick={props.onClick}>Order a Delivery</p>
       </div>
     </div>
   )
