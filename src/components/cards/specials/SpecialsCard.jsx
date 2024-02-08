@@ -1,4 +1,11 @@
+import { useState } from 'react';
+import OrderDelivery from '../../OrderDelivery';
+
 const SpecialsCard = (props) => {
+  const [closeOverlay, setCloseOverlay] = useState(false)
+  const handleButtonClick = (e) => {
+    setCloseOverlay(true);
+  }
   return (
     <div className='special-card'>
       <div><img src={props.pix} alt="daily special meal" /></div>
@@ -8,8 +15,17 @@ const SpecialsCard = (props) => {
       </div>
       <div>{props.desc}</div>
       <div>
-          <p onClick={props.onClick}>Order a Delivery</p>
+        <p className='order-delivery-btn' onClick={handleButtonClick}>Order a Delivery</p>
       </div>
+      {closeOverlay ?
+        <OrderDelivery
+          setCloseOverlay={setCloseOverlay}
+          pix={props.pix}
+          name={props.name}
+          price={props.price}
+        /> :
+        ''
+      }
     </div>
   )
 }

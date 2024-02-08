@@ -13,17 +13,7 @@ const dailySpecials = specials.map(card => {
       name={card.name}
       price={card.price}
       desc={card.desc}
-      onClick={() => {
-        return (
-          <OrderDelivery
-            pix={card.pix}
-            name={card.name}
-            price={card.price}
-            num={card.num}
-          />
-        )
-      }}
-  />
+    />
   </> )
 })
   return (

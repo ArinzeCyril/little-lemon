@@ -34,11 +34,6 @@ const Reservation = () => {
       terms
     )
   }
-  console.log(`date: ${reserve.date}`);
-  console.log(`time: ${reserve.time}`);
-  console.log(`agree: ${reserve.agree}`);
-  console.log(`terms: ${terms}`);
-
   return (
     <section>
         <div className="reservation">

@@ -17,7 +17,7 @@ const Nav = props => {
         <li><HLink to={'/#menu'} smooth>menu</HLink></li>
         <li><HLink to={'/#about'} smooth>about</HLink></li>
         <li><Link to={'/reservation'}>reservation</Link></li>
-        <li><Link to={'/delivery'}>order online</Link></li>
+        <li><Link to={'/order'}>order online</Link></li>
         <li><Link to={`/login`} onClick={signupState()}>login</Link></li>
       </ul>
     </nav>
