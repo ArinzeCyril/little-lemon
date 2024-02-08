@@ -3,10 +3,11 @@
     color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-size: 12px;
 }
 
 .testimonials div:first-of-type h2{
-    font-size: 48px;
+    font-size: 28px;
     text-align: center;
     font-family: 'Karla', sans-serif;
     font-weight: 800;
@@ -17,14 +18,15 @@
     flex-direction: column;
     gap: .5rem;
     box-sizing: border-box;
-    width: 23.8%;
+    width: 85%;
     background-color: #EDEFEE;
     padding: 1em;
     color: #000;
+    margin-top: 1rem;
 }
 
 .testimonials-card > .rating{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .testimonials-card .img-details{
@@ -35,5 +37,24 @@
 .testimonials-card .img-details img{
     width: 35%;
     aspect-ratio: .6;
-    border-radius: 16px;
+    border-radius: 1.2em;
+}
+
+@media (min-width: 750px){
+    .testimonials{
+        font-size: 14px;
+    }
+    .testimonials div:first-of-type h2{
+        font-size: 48px;
+    }
+    .testimonials-card {
+        width: 23.8%;
+    }
+    .testimonials-card > .rating{
+        font-size: 18px;
+    }
+    .testimonials-card .img-details img{
+        width: 35%;
+        aspect-ratio: .6;
+    }
 }

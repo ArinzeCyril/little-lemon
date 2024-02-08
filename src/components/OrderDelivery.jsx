@@ -33,7 +33,7 @@ const OrderDelivery = ({ setCloseOverlay, pix, name, price }) => {
                   </span>
               </div>
               <div className='order-delivery-total-price'>
-                <p>Total Price</p>
+                <p>Total Price :</p>
                 <p>{Math.floor(totalPrice)}</p>
               </div>
           </div>

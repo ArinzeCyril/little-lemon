@@ -20,7 +20,7 @@ const dailySpecials = specials.map(card => {
     <section id='menu' className='daily-specials'>
       <div>
         <h2>Specials</h2>
-        <Button text="Order Online" />
+        <Button text="Order Online" link={'order'} />
       </div>
       <div className='cards'>
         {dailySpecials}

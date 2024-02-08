@@ -5,8 +5,12 @@
     gap: 2rem;
     margin-top: 1rem;
     padding-top: 5rem;
-    padding-bottom: 6rem;
     position: relative;
+}
+@media (max-width: 749px){
+    .daily-specials{
+        font-size: 14px;
+    }
 }
 
 .daily-specials>div:first-of-type {
@@ -16,15 +20,15 @@
 }
 
 .daily-specials>div:first-of-type h2{
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Karla', sans-serif;
     font-weight: 800;
 }
 
 .daily-specials>div:first-of-type>button{
-    border: none;
-    padding: 1.5rem 3rem;
-    font-size: 18px;
+    padding: .9rem 1.2rem;
+    font-size: 14px;
+    font-weight: 700;
     color: #000;
     background-color: #F4CE14;
     border-radius: 16px;
@@ -35,8 +39,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 3rem;
-    width: 30%;
+    margin-bottom: 2rem;
+    width: 85%;
     background-color: #EDEFEE;
     padding-bottom: .5rem;
     border-radius: 16px 16px 0 0;
@@ -76,9 +80,30 @@
     padding: .5rem 0;
     text-align: center;
 }
+@media (max-width: 749px){
+    .order-delivery-btn{
+        margin-top: 1.5rem;
+    }
+}
 .order-delivery-btn:active,
 .order-delivery-btn:focus,
 .order-delivery-btn:hover{
     border-radius: .5em;
     background-color: #d6d6d6;
+}
+@media (min-width: 750px){
+    /* used in DailySpecials components */
+    .daily-specials{
+        font-size: 16px;
+    }
+    .daily-specials>div:first-of-type h2{
+        font-size: 32px;
+    }
+    .daily-specials>div:first-of-type>button{
+        padding: 1.5rem 3rem;
+        font-size: 18px;
+    }
+    .special-card{
+        width: 30%;
+    }
 }

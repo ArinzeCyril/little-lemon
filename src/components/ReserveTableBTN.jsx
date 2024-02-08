@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 
-const ReserveTableBTN = ({text}) => {
+const ReserveTableBTN = ({text, link}) => {
   return (
     <button>
-      <Link to={'/reservation'} >
+      <Link to={link} >
         {text}
       </Link>
     </button>

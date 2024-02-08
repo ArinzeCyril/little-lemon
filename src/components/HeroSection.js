@@ -15,9 +15,9 @@ const HeroSection = () => {
                 <p>we are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                 <p>We are looking forward to serving you</p>
             </div>
-            <Button text="Reserve a Table" />
+            <Button text="Reserve a Table" link={'/reservation'} />
         </div>
-        <div className='hero-img'>
+        <div className='hero-img-container'>
             <img src={heroImg} alt=''/>
         </div>
     </section>

@@ -70,9 +70,10 @@ button {
 
 .cards {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 header{
@@ -86,6 +87,11 @@ header{
   width: 100vw;
   z-index: 1000;
   box-shadow: 2px 1px 20px #495E57;
+}
+@media (max-width: 749px){
+  header{
+    /* display: none; */
+  }
 }
 
 .main-nav > ul {
@@ -116,75 +122,62 @@ header{
   justify-content: space-between;
   padding: 4rem 0;
   gap: 1rem;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .hero-section h1{
-  font-size: 64px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 4rem;
   color: #F4CE14;
   margin: 0;
 }
 
 .hero-section h2{
-  font-size: 40px;
+  font-size: 20px;
   text-transform: capitalize;
-  line-height: 3rem;
   margin: 0;
 }
 
-.hero-section p{
-  width: 453px;
-  line-height: 35px;
-}
-
 .hero-section button{
-  width: 218px;
+  max-width: 218px;
   padding: 1rem;
-  font-size: 18px;
-  border-radius: 16px;
+  font-size: 14px;
+  border-radius: 1em;
   border: none;
   color: #000;
   background-color: #F4CE14;
 }
 
-.hero-section img{
-  width: 410px;
-  border-radius: 30px;
-  position: relative;
-  top: 4rem;
-  aspect-ratio: .8;
-}
-
-.hero-img {
-  height: 25em;
+@media (max-width: 749px){
+  .hero-section img{
+    display: none;
+  }
 }
 
 .abouts {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 15rem;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .abouts > div:first-of-type {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
   max-width: 30rem;
 }
 
 .abouts h2{
-  font-size: 48px;
+  font-size: 35px;
   margin: 35px 0 0 0;
 }
 
 .abouts h3{
-  font-size: 32px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -197,22 +190,21 @@ header{
 }
 
 .about-img img{
-  width: 257px;
-  height: 354px;
-  aspect-ratio: .8;
-  border-radius: 20px;
+  width: 60%;
+  aspect-ratio: .6;
+  border-radius: 1.5em;
 }
 
 .about-img img:first-of-type{
   position: relative;
-  left: 6rem;
-  top: 13rem;
+  top: 7rem;
   z-index: 100;
 }
 
 .about-img img:nth-of-type(2){
   position: relative;
-  top: 6rem;
+  top: 3rem;
+  left: -2.5rem;
 }
 
 /* ##### Log In section ###### */
@@ -228,18 +220,18 @@ header{
   align-items: center;
   box-sizing: border-box;
   background-color: #495E57;
-  height: 93vh;
+  height: 95vh;
 }
 
 .login h1{
-  font-size: 50px;
+  font-size: 35px;
   color: #F4CE14;
   margin: 0;
   text-align: center;
 }
 
 .login h2{
-  font-size: 32px;
+  font-size: 20px;
   color: #fff;
   margin: 0;
   font-family: 'Karla', sans-serif;
@@ -258,24 +250,24 @@ header{
 
 .input input {
   box-sizing: border-box;
-  padding: 2rem;
-  width: 40vw;
+  padding: 1.5rem;
+  width: 85vw;
   max-width: 50rem;
-  border-radius: 1rem;
-  font-size: 20px;
-  text-indent: 7rem;
+  border-radius: 1em;
+  font-size: 16px;
+  text-indent: 3rem;
 }
 
 .input img{
   position: absolute;
-  left: 3rem;
+  left: 2rem;
   top: 1.7rem;
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .input>div:nth-of-type(2) img{
-  width: 3rem;
-  left: 2.5rem;
+  width: 2.5rem;
+  left: 1.5rem;
   top: 1.8rem;
 }
 
@@ -283,7 +275,7 @@ header{
   background-color: #F4CE14;
   margin-top: 3rem;
   text-indent: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -303,13 +295,13 @@ header{
   align-items: center;
   background-color: #495E57;
   color: #fff;
-  min-height: 93vh;
-  padding-top: 2rem;
+  min-height: 95vh;
+  padding-top: 3.8rem;
 }
 
 .signup h1{
   color: #F4CE14;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .signup form{
@@ -326,13 +318,13 @@ header{
 
 .signup button,
 .signup input{
-  width: 40vw;
+  width: 85vw;
   max-width: 50rem;
-  border-radius: 20px;
-  font-size: 18px;
+  border-radius: 2em;
+  font-size: 14px;
   padding: .5rem;
-  margin-bottom: 1.5rem;
-  margin-top: .3rem;
+  margin-bottom: 1rem;
+  margin-top: .2rem;
   box-sizing: border-box;
 }
 
@@ -341,30 +333,30 @@ header{
 }
 
 .signup div:first-of-type{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .signup div:last-of-type{
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .signup div>input{
   box-sizing: border-box;
-  padding: 1.5rem;
-  text-indent: 5rem;
+  padding: 1.2rem;
+  text-indent: 3rem;
 }
 
 .signup img{
   position: absolute;
-  left: 2.5rem;
-  top: 1.3rem;
-  width: 1.8rem;
+  left: 2rem;
+  top: 1.2rem;
+  width: 1.2rem;
 }
 
 .signup div:nth-of-type(2) img{
-  width: 2.5rem;
-  left: 2rem;
-  top: 1.6rem;
+  width: 1.7rem;
+  left: 1.5rem;
+  top: 1.4rem;
 }
 
 .signup button {
@@ -372,10 +364,9 @@ header{
   background-color: #F4CE14;
   font-weight: 700;
   padding: 1.5rem;
-  width: 35vw;
+  width: 85vw;
   max-width: 45rem;
 }
-
 
 /* ##### Reservation section ###### */
 .reservation {
@@ -386,12 +377,12 @@ header{
   align-items: center;
   background-color: #495E57;
   color: #fff;
-  min-height: 93vh;
+  min-height: 95vh;
   padding-top: 2rem;
 }
 
 .reservation h1{
-  font-size: 50px;
+  font-size: 30px;
   color: #F4CE14;
 }
 
@@ -403,11 +394,11 @@ header{
 }
 
 .reservation input{
-  padding: 1rem;
-  width: 40vw;
+  padding: .5rem;
+  width: 85vw;
   max-width: 50rem;
-  border-radius: 20px;
-  margin-bottom: 2rem;
+  border-radius: 2em;
+  margin-bottom: 1rem;
   text-indent: 1.5rem;
 }
 
@@ -418,17 +409,25 @@ header{
   margin-bottom: .5rem;
 }
 
+@media (max-width: 749px){
+  .guest-no,
+  .reservation label{
+    font-size: 14px;
+  }
+}
+
 .guest-no{
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .guest-no p{
-  margin: 2rem 0;
+  margin: 1.3rem 0;
+  margin-top: 0;
 }
 
 #minusBtn,
 #addBtn {
-  padding: .5rem;
+  padding: .3rem .5rem;
   text-align: center;
   background-color: #fff;
   color: #000;
@@ -437,8 +436,8 @@ header{
 }
 
 .guest-no span{
-  margin-right: 2rem;
-  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
 }
 
 .terms {
@@ -446,6 +445,14 @@ header{
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+@media (max-width: 749px){
+  .terms{
+    width: 85vw;
+    font-size: 14px;
+    margin-top: .5rem;
+  }
 }
 
 .terms>label{
@@ -459,14 +466,14 @@ header{
 }
 
 .reservation button{
-  font-size: 18px;
+  font-size: 14px;
   color: #000;
   background-color: #F4CE14;
   font-weight: 700;
-  padding: 1.5rem;
-  width: 35vw;
+  padding: 1.2rem;
+  width: 85vw;
   max-width: 45rem;
-  border-radius: 20px;
+  border-radius: 1.5em;
   margin-top: 2.5rem;
 }
 
@@ -482,30 +489,31 @@ header{
   justify-content: center;
   align-items: center;
   background-color: #495E57;
-  min-height: 93vh;
+  min-height: 95vh;
   padding-top: 2rem;
 }
 
 .confirmation img{
-  width: 10rem;
+  width: 5rem;
 }
 
 .confirmation h1{
   color: #F4CE14;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .confirmation p {
-  width: 388px;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   color: #fff;
+  padding: 0 1rem;
 }
 
 .confirmation button{
-  width: 30rem;
+  width: 85vw;
+  max-width: 20rem;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1em;
   background-color: #F4CE14;
   margin-top: 5rem;
 }
@@ -513,13 +521,14 @@ header{
 /* ##### Order Delivery section ###### */
 .order-delivery {
   position: fixed;
-  top: 7rem;
-  /* bottom: 1rem; */
-  width: 50%;
+  top: 10rem;
+  width: 70vw;
   max-width: 30rem;
-  left: 25%;
-  border-radius: 20px;
+  left: 50%;
+  border-radius: 2em;
   background-color: #495E57;
+  right: 50%;
+  transform: translateX(-50%);
   color: #fff;
   box-shadow: .5px .5px 5px #7d6b6b;
   z-index: 111;
@@ -527,7 +536,7 @@ header{
 .delivery-pix{
   width: 100%;
   aspect-ratio: 1.9;
-  border-radius: 20px 20px 0 0;
+  border-radius: 2em 2em 0 0;
 }
 .close{
   position: absolute;
@@ -542,8 +551,9 @@ header{
 .card-details{
   display: flex;
   flex-direction: column;
+  font-size: 14px;
   gap: .5rem;
-  padding: 1rem 3rem 3rem;
+  padding: 1rem 1.2rem 2rem;
 }
 .card-details>div:first-of-type{
   display: flex;
@@ -556,25 +566,24 @@ header{
 .price-calc{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 .order-delivery-calc{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .order-delivery-calc>span>span:first-of-type,
 .order-delivery-calc>span>span:last-of-type{
   color: rgb(44, 39, 39);
   background-color: #618076;
-  padding: .2rem .8rem;
-  font-weight: 400;
-  font-size: 30px;
+  padding: .1rem .5rem;
+  font-weight: 700;
+  font-size: 20px;
   border-radius: 5rem;
   cursor: pointer;
 }
 .order-delivery-calc>span>span:nth-of-type(2){
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 .order-delivery-total-price{
   display: flex;
@@ -582,9 +591,9 @@ header{
   gap: 2rem;
 }
 .to-cart {
-  padding: 1rem 3rem;
+  padding: 1rem;
   box-shadow: 1px 1px 10px rgb(191, 176, 176);
-  border-radius: 20px;
+  border-radius: 1.3em;
   background-color: #618076;
   text-align: center;
   cursor: pointer;
@@ -592,13 +601,15 @@ header{
 .to-cart:active,
 .to-cart:hover{
   background-color: #669284;
-  border-radius: 20px;
+  border-radius: 2em;
   color: rgb(67, 60, 60);
 }
 
 /* ##### Footer section ###### */
 footer {
   display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
   justify-content: space-between;
   background-color: #495E57;
   color: #fff;
@@ -611,8 +622,9 @@ footer div:first-of-type{
 
 footer img{
   background-color: #fff;
-  height: 107px;
+  height: 3rem;
   aspect-ratio: 2;
+  margin: 0 auto;
 }
 
 footer h2,
@@ -630,9 +642,248 @@ footer li{
   margin-left: 0;
 }
 
+@media (max-width: 749px){
+  footer h2{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  footer li{
+    font-weight: 100;
+    font-size: 10px;
+    padding: .15rem 0;
+  }
+}
+
 footer a{
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: .3rem 0;
+}
+
+@media (min-width: 750px){
+  .cards{
+    flex-direction: row;
+  }
+  .hero-left{
+    font-size: 18px;
+  }
+  .hero-section h1{
+    font-size: 64px;
+    line-height: 4rem;
+  }
+  .hero-section h2{
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  .hero-section p{
+    width: 453px;
+    line-height: 35px;
+  }
+  .hero-section button{
+    font-size: 18px;
+    width: 218px;
+  }
+  .hero-section img{
+    width: 410px;
+    border-radius: 30px;
+    position: relative;
+    top: 4rem;
+    aspect-ratio: .8;
+    box-shadow: .5px .5px 10px rgb(145, 123, 123);
+  }
+  .hero-img-container {
+    height: 25em;
+  }
+  .abouts {
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 18px;
+  }
+  .abouts > div:first-of-type {
+      gap: 5rem;
+    }
+  .abouts h2{
+      font-size: 48px;
+  }
+  .abouts h3{
+      font-size: 32px;
+  }
+  .about-img img{
+      width: 257px;
+      height: 354px;
+      aspect-ratio: .8;
+      border-radius: 20px;
+  }
+  .about-img img:first-of-type{
+      left: 6rem;
+      top: 13rem;
+      z-index: 100;
+  }
+    .about-img img:nth-of-type(2){
+      position: relative;
+      top: 6rem;
+  }
+  /* ##### Log In section ###### */
+    .login {
+      height: 93vh;
+  }
+    .login h1{
+      font-size: 50px;
+  }
+    .login h2{
+      font-size: 32px;
+  }
+    .input input {
+      padding: 2rem;
+      width: 40vw;
+      max-width: 50rem;
+      font-size: 20px;
+      text-indent: 7rem;
+    }
+    .input img{
+      left: 3rem;
+      width: 2rem;
+    }
+    .input>div:nth-of-type(2) img{
+      width: 3rem;
+      left: 2.5rem;
+    }
+    .input>input:last-of-type {
+      font-size: 18px;
+    }
+    /* ##### SignUp section ###### */
+    .signup{
+      min-height: 93vh;
+      padding-top: 2rem;
+    }
+    .signup h1{
+      font-size: 50px;
+    }
+    .signup button,
+    .signup input{
+      width: 40vw;
+      font-size: 18px;
+      padding: .5rem;
+      margin-bottom: 1.5rem;
+      margin-top: .3rem;
+    }
+    .signup div:first-of-type{
+      margin-top: 2rem;
+    }
+    .signup div:last-of-type{
+      margin-bottom: 1rem;
+    }
+    .signup div>input{
+      padding: 1.5rem;
+      text-indent: 5rem;
+    }
+    .signup img{
+      left: 2.5rem;
+      top: 1.3rem;
+      width: 1.8rem;
+    }
+    .signup div:nth-of-type(2) img{
+      width: 2.5rem;
+      left: 2rem;
+      top: 1.6rem;
+    }
+    .signup button {
+      width: 35vw;
+    }
+    /* ##### Reservation section ###### */
+    .reservation {
+      min-height: 93vh;
+    }
+    .reservation h1{
+      font-size: 50px;
+    }
+    .reservation input{
+      padding: 1rem;
+      width: 40vw;
+      margin-bottom: 2rem;
+    }
+    .guest-no,
+    .reservation label{
+      align-self: flex-start;
+      text-indent: 1rem;
+      margin-bottom: .5rem;
+      font-size: 16px;
+    }
+    .guest-no{
+      margin-bottom: 2rem;
+    }
+    .guest-no p{
+      margin: 2rem 0;
+    }
+    #minusBtn,
+    #addBtn {
+      padding: .5rem;
+    }
+    .guest-no span{
+      margin-right: 2rem;
+      font-size: 1.2rem;
+    }
+    .reservation button{
+      font-size: 18px;
+      padding: 1.5rem;
+      width: 35vw;
+      border-radius: 2em;
+    }
+    /* ##### Confirmation section ###### */
+    .confirmation{
+      min-height: 93vh;
+    }
+    .confirmation img{
+      width: 10rem;
+    }
+    .confirmation h1{
+      font-size: 50px;
+    }
+    .confirmation p {
+      width: 388px;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .confirmation button{
+      width: 30rem;
+      padding: 1rem;
+    }
+    /* ##### Order Delivery section ###### */
+    .order-delivery {
+      top: 7rem;
+      width: 50%;
+      left: 50%;
+    }
+    .card-details{
+      padding: 1rem 3rem 3rem;
+      font-size: 16px;
+    }
+    .order-delivery-calc{
+      gap: 2rem;
+    }
+    .order-delivery-calc>span>span:first-of-type,
+    .order-delivery-calc>span>span:last-of-type{
+      padding: .2rem .8rem;
+      font-weight: 400;
+      font-size: 30px;
+    }
+    .order-delivery-calc>span>span:nth-of-type(2){
+      margin: 0 1.5rem;
+    }
+    .to-cart {
+      padding: 1rem 3rem;
+      border-radius: 20px;
+    }
+    /* ##### Footer section ###### */
+    footer {
+      display: flex;
+      flex-direction: row;
+    }
+    footer img{
+      height: 107px;
+    }
+    footer a{
+      padding: .3rem 0;
+    }
 }
