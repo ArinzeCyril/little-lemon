@@ -43,7 +43,8 @@ h3 {
   font-family: 'Markazi Text', serif;
 }
 
-header,
+.mobile-nav,
+.desktop,
 .hero-section,
 .daily-specials,
 .testimonials,
@@ -78,20 +79,11 @@ button {
 
 header{
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
-  background-color: #fff;
   width: 100vw;
   z-index: 1000;
   box-shadow: 2px 1px 20px #495E57;
-}
-@media (max-width: 749px){
-  header{
-    /* display: none; */
-  }
 }
 
 .main-nav > ul {
@@ -106,6 +98,68 @@ header{
   color: #000;
   font-weight: 700;
   text-transform: capitalize;
+}
+@media (max-width: 749px){
+  header{
+    padding: 0;
+    display: block;
+  }
+  header>.desktop{
+    display: none;
+  }
+  header>.mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  header .mobile-nav{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-logo{
+    width: 7rem;
+  }
+  .mobile-menu{
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mobile-nav-toggle,
+  .mobile-nav-close{
+    background-color: rgba(67, 79, 69, 0.889);
+    margin: 0;
+    transition: 5s ease-out;
+  }
+  @supports (backdrop-filter: blur(10px)) {
+    .mobile-nav-toggle,
+    .mobile-nav-close{
+      background-color: rgba(44, 38, 38, 0.1);
+      backdrop-filter: blur(20px);
+    }
+  }
+  .mobile-nav-close{
+    transform: translateX(100%);
+    display: none;
+  }
+  .mobile-nav-toggle{
+    transform: translateX(0%);
+  }
+  .main-nav > ul {
+    gap: 0;
+    padding: 0;
+  }
+  .main-nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    text-indent: 2rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.293);
+  }
 }
 
 .hero-section{
@@ -492,6 +546,29 @@ header{
   min-height: 95vh;
   padding-top: 2rem;
 }
+@media (max-width: 749px){
+  .main-nav>ul{
+    flex-direction: column;
+  }
+  .login-page {
+    box-sizing: border-box;
+    padding-top: 0;
+  }
+  .signup h1{
+    margin: 1rem;
+    margin-top: 3rem;
+  }
+  .login {
+    height: 100vh;
+  }
+  .signup,
+  .reservation,
+  .confirmation{
+    padding-top: 0;
+    min-height: 100vh;
+  }
+}
+
 
 .confirmation img{
   width: 5rem;
@@ -661,6 +738,13 @@ footer a{
 }
 
 @media (min-width: 750px){
+  header>.mobile{
+    display: none;
+  }
+  header>.desktop{
+    display: flex;
+    background-color: #fff;
+}
   .cards{
     flex-direction: row;
   }
