@@ -1,9 +1,8 @@
-// import Header from './Header';
 import userICN from '../assets/icons/user-regular.svg';
 import eyeICN from '../assets/icons/icon _eye_.svg';
+import {Link} from 'react-router-dom';
 
 const login = ( { setSignup } ) => {
-    
   return (
     <section className='login-page'>
         <div className='login'>
@@ -20,7 +19,9 @@ const login = ( { setSignup } ) => {
                     <input type="password" placeholder='password' />
                     <img src={eyeICN} alt="" />
                 </div>
-                <input type="button" value="Log In" />
+                <Link to={'/'}>
+                    <input type="button" value="Log In" />
+                </Link>
                 <p>Forgot passward</p>
             </form>
         </div>

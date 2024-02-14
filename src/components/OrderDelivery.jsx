@@ -37,7 +37,6 @@ const OrderDelivery = ({ setCloseOverlay, pix, name, price }) => {
                 <p>{Math.floor(totalPrice)}</p>
               </div>
           </div>
-          {/* <div>{specials[0].desc}</div> */}
           <div className='to-cart'>add to cart</div>
         </div>
     </section>

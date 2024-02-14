@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const SignUpInput = (props) => {
-  // const required = props.required && required
 
   return (
     <>
