@@ -21,9 +21,13 @@ const Reservation = () => {
    '21:00',
    '22:00'
   ])
+  const [occasion, setOccasion] = useState([
+    'Birthday',
+    'Anniversary'
+  ])
 
   const add = () => {
-    setTableNo(tableNo+1)
+    tableNo < 10 && setTableNo(tableNo+1)
   }
   const minus = () => {
     tableNo > 1 && setTableNo(tableNo-1);
@@ -45,6 +49,9 @@ const Reservation = () => {
   const setTime = availableTimes.map(time => {
     return <option>{time}</option>
   })
+  const occasions = occasion.map(feast => {
+    return <option>{feast}</option>
+  })
   return (
     <section>
         <div className="reservation">
@@ -58,14 +65,26 @@ const Reservation = () => {
                   onChange={e => {setReserve({...reserve, date: e.target.value})}}
                 />
                 <label for="res-time">Choose time</label>
-                  <select id="res-time ">
+                <div className='select-times'>
+                  <select
+                    id="res-time "
+                    className='select-time'
+                    // style='width: 20rem'
+                  >
                     {setTime}
                   </select>
-                <div className='guest-no'>
+                </div>
+                <div className='guest-no' data-testid='guest'>
                     <p>Table for*</p>
-                    <span id='addBtn' onClick={add}>+</span>
-                    <span>{tableNo}</span>
+                    <span id='addBtn' data-testid='addOne' onClick={add}>+</span>
+                    <span id='currentNumber' data-testid='guestNumber'>{tableNo}</span>
                     <span id='minusBtn' onClick={minus}>-</span>
+                </div>
+                <label htmlFor="occasion">Occasion</label>
+                <div>
+                  <select id="occasion">
+                    {occasions}
+                  </select>
                 </div>
                 <InputField
                   inpType='text'

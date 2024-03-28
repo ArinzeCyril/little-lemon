@@ -23,6 +23,11 @@ const login = ( { setSignup } ) => {
                     <input type="button" value="Log In" />
                 </Link>
                 <p>Forgot passward</p>
+                <div className='signup-btn'>
+                    <Link to={'/signup'}>
+                        <input type="button" value="SignUp" />
+                    </Link>
+                </div>
             </form>
         </div>
     </section>
