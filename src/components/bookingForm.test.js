@@ -6,6 +6,3 @@ test('check if header is rendered', () => {
     const heading = screen.getByText(/reservation details/i)
     expect(heading).toBeInTheDocument()
 })
-
-// write two more test for initialiseTimes and updateTimes 
-// also test that the form can be submitted by the user

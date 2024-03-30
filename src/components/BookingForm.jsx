@@ -1,19 +1,16 @@
 import InputField from './InputField';
 import GuestDetails from './GuestDetails';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import {reservations} from '../data/reservations';
 
 const Reservation = (
   {
     availableTimes,
-    setAvailableTimes,
-    handleSubmit,
-    reserve,
-    setReserve,
     tableNo,
     setTableNo,
     terms,
     setTerms,
-    err
+    navigate
   }) => {
 
   const [occasion, setOccasion] = useState([
@@ -31,13 +28,53 @@ const Reservation = (
       terms
     )
   }
-  console.log(err);
-  const setTime = availableTimes.map(time => {
+  const setTime = availableTimes && availableTimes.map(time => {
     return <option key={time}>{time}</option>
   })
   const occasions = occasion.map(feast => {
     return <option key={feast}>{feast}</option>
   })
+
+  const [reserve, setReserve] = useState({
+    date: '',
+    time: '17:00',
+    table: tableNo,
+    specialReq: '',
+    agree: !terms
+  })
+  let doubleReservation
+
+  const handleSubmit = e => {
+    let doublReservation = false
+
+    e.preventDefault()
+
+    reservations.map(reservation => {
+      const locDetail = reserve.date + reserve.time
+      const remDetail = reservation.date + reservation.time
+
+      if (locDetail == remDetail){
+        doublReservation = true
+        setErr(errorMsg)
+      } else {
+        doublReservation = false
+        reservations.push(reserve)
+      }
+      doubleReservation = doublReservation
+    })
+    if (!doublReservation){
+      navigate('/confirmation')
+    }
+  }
+
+  const [err, setErr] = useState('')
+
+  const errorMsg = <p className='err'>A reservation has been made for the time you selected. Please select a diferent time or date</p>
+
+  useEffect(() => {
+    setErr('')
+  },[reserve])
+
   return (
     <section>
       <div className="reservation">
