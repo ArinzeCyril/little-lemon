@@ -531,11 +531,12 @@ header {
 
 .close {
   position: absolute;
-  color: #564949;
+  color: #201616;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   padding: .8rem;
-  box-shadow: .5px 1px 5px #a66b6b;
+  text-shadow: .5px 1px 9px #845b5b;
+  box-shadow: .5px 1px 5px #000000,.5px 1px 25px #000000;
   border-radius: 50%;
   cursor: pointer;
 }
